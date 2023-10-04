@@ -35,7 +35,7 @@ deployment locations.
 
 
 ## Environmental Monitoring Platform:
-###1. Web-Based Platform Design:
+### 1. Web-Based Platform Design:
 - Create an intuitive and visually appealing web interface accessible to park visitors.
 - Display real-time temperature and humidity data along with graphical representations for
 easy understanding.
