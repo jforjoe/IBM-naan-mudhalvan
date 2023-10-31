@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+<title>DHT22 Data Stream</title>
+<script type="text/javascript">
+var eventSource = new EventSource("http://192.168.137.235/dht");
+
+eventSource.onmessage = function(event) {
+  // Parse the JSON data
+  var data = JSON.parse(event.data);
+
+  // Display the temperature and humidity readings
+  document.getElementById("temperature").innerHTML = data.temperature + " °C";
+  document.getElementById("humidity").innerHTML = data.humidity + " %";
+};
+</script>
+</head>
+<body>
+<h1>DHT22 Data Stream</h1>
+
+<p>Temperature: <span id="temperature"></span></p>
+<p>Humidity: <span id="humidity"></span></p>
+</body>
+</html>
